@@ -1,2 +1,1 @@
-# Electron-CRA-Template
-Create React App template for Electron
+# Electron CRA Boilerplate Template
