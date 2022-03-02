@@ -6,7 +6,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>Basic Create-React-App template for Electron.</p>
+        <p>Electron template for Create-React-App.</p>
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
