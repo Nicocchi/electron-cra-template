@@ -2,23 +2,27 @@
   "name": "electron-cra-template",
   "version": "0.1.0",
   "main": "public/electron.js",
+  "homepage": "./",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "electron-is-dev": "^2.0.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-scripts": "4.0.1",
     "web-vitals": "^0.2.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "react-start": "react-scripts start",
+    "react-build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "dev": "concurrently -k \"BROWSER=none yarn start\" \"yarn:electron\"",
-    "electron": "wait-on tcp:3000 && electron ."
+    "start": "concurrently -k \"BROWSER=none yarn react-start\" \"yarn:electron\"",
+    "electron": "wait-on tcp:3000 && electron .",
+    "build": "yarn react-build && yarn electron-build",
+    "electron-build": "electron-builder"
   },
   "eslintConfig": {
     "extends": [
@@ -51,7 +55,7 @@
   "devDependencies": {
     "concurrently": "^7.0.0",
     "electron": "^17.1.0",
-    "electron-is-dev": "^2.0.0",
+    "electron-builder": "^22.14.13",
     "wait-on": "^6.0.1"
   }
 }
