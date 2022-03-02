@@ -126,5 +126,9 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+# package lock files
 package-lock.json
 yarn.lock
+
+# vscode settings
+/.vscode
