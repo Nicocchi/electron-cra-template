@@ -1,6 +1,9 @@
 <h1 align="center">Electron CRA Boilerplate Template</h1>
 
-![React Logo](public/logo192.png?style=centerme)
+<p align="center">
+  <img src="https://github.com/Nicocchi/electron-cra-template/blob/main/public/logo192.png?raw=true" alt="React Logo" />
+</p>
+
 
 <p align="center">Simple boilerplate for setting up ReactJS and Electron together</p>
 
